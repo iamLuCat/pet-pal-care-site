@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ủng hộ dự án – Pet Pal Care</title>
+<meta name="description" content="Ủng hộ Pet Pal Care bằng VietQR: app miễn phí, không quảng cáo.">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta name="theme-color" content="#5a3e86">
+<link rel="preload" href="Baloo2-vi.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="i18n.js"></script>
+<script>(function(){if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className="js"})()</script>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua điều hướng</a>
+<nav aria-label="Chính"><div class="wrap">
+  <a class="logo" href="./"><span class="badge"><img width="160" height="160" src="img/pet_cat.webp" alt=""></span><span class="plate">Pet Pal Care</span></a>
+  <div class="links"><a href="./#features">Tính năng</a><a href="./#download">Tải app</a><a href="support.html" class="keep">Ủng hộ</a><button class="lang keep" type="button" data-lang-toggle>EN</button></div>
+</div></nav>
+<div class="floor floor-tall"><main id="main" class="wrap">
+  <h1 class="outline page-title">Mời bé một bữa ăn</h1>
+  <div class="dialog"><p>Pet Pal Care miễn phí, không quảng cáo. Mọi đóng góp dùng cho phí tài khoản nhà phát triển, server và thời gian làm tính năng mới. Hoàn toàn tự nguyện.</p></div>
+
+  <div class="tiers">
+    <button class="tier" aria-pressed="false" data-amount="20000"><img width="160" height="160" src="img/care_meal.webp" alt=""><b>20.000đ</b>Một bữa nhẹ</button>
+    <button class="tier on" aria-pressed="true" data-amount="50000"><img width="160" height="160" src="img/acc_yarn.webp" alt=""><b>50.000đ</b>Cuộn len mới</button>
+    <button class="tier" aria-pressed="false" data-amount="100000"><img width="160" height="160" src="img/acc_crown.webp" alt=""><b>100.000đ</b>Vương miện</button>
+  </div>
+
+  <div class="donate">
+    <div class="dialog">
+      <span class="ribbon">Chuyển khoản</span>
+      <div class="kv"><span>Ngân hàng</span><b data-bind="donate.bank"></b><span>Số tài khoản</span><b data-bind="donate.account"></b><span>Chủ TK</span><b data-bind="donate.holder"></b></div>
+      <p class="btn-row"><button class="btn sm" data-copy="donate.account">Chép số tài khoản</button></p>
+      <p class="note">Nội dung gợi ý: “Ung ho Pet Pal Care”. Bấm mức ở trên để QR điền sẵn số tiền, bạn vẫn sửa được trong app ngân hàng.</p>
+    </div>
+    <div class="qr" data-qr-wrap><div data-qr="donate"></div><small>Quét bằng app ngân hàng</small></div>
+  </div>
+
+  <section>
+    <h2 class="outline">Cách khác để giúp</h2>
+    <div class="grid help">
+      <div class="dialog card"><div class="ic"><img width="160" height="160" loading="lazy" decoding="async" src="img/acc_crown.webp" alt=""></div><h3>Đánh giá 5 sao</h3><p>Giúp nhiều người tìm thấy app hơn.</p></div>
+      <div class="dialog card"><div class="ic"><img width="160" height="160" loading="lazy" decoding="async" src="img/pet_dog.webp" alt=""></div><h3>Chia sẻ cho bạn bè</h3><p>Gửi link hoặc mã QR cho người nuôi thú cưng.</p></div>
+      <div class="dialog card"><div class="ic"><img width="160" height="160" loading="lazy" decoding="async" src="img/care_meal.webp" alt=""></div><h3>Mua qua Shop trong app</h3><p>Link Shopee có affiliate, bạn không mất thêm phí.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="dialog"><span class="ribbon">Cần hỗ trợ?</span>
+      <p>Gửi email kèm mẫu máy và phiên bản app để báo lỗi hoặc góp ý.</p>
+      <p class="btn-row"><a class="btn purple sm" href="#" id="mail">Liên hệ</a></p></div>
+  </section>
+</main></div>
+<footer><div class="wrap"><span>© 2026 Pet Pal Care</span><div class="r"><a href="privacy.html">Riêng tư</a><a href="terms.html">Điều khoản</a><a href="./">Trang chủ</a></div></div></footer>
+<div id="toast" class="toast"></div>
+<script src="qrcode.js" defer></script><script src="lang-en.js" defer></script><script src="config.js" defer></script><script src="site.js" defer></script><script src="anim.js" defer></script>
+<script>addEventListener("DOMContentLoaded",function(){document.getElementById("mail").href="mailto:"+PET_CFG.contactEmail})</script>
+</body>
+</html>
